@@ -37,8 +37,29 @@ li {
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
+.wrap {
+    width: 100%;
+}
+
+.slider-button {
+    display: block;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin-right: 12px;
+
+    background-color: #D1D6E3;
+    border: none;
+    border-radius: 50%;
+}
+
+.slider-button:hover,
+.slider-button:active {
+    background-color: #5E81FE;
+}
 
 /* header */
 
@@ -113,4 +134,91 @@ ul {
 .main-header .header__start-button:hover {
     color: #D2E1FF;
     background-color: #5E81FE;
+}
+
+/* advantages */
+
+.advantages {
+    margin: auto;
+    width: 1440px;
+    min-height: 570px;
+}
+
+.advantages__wrap{
+    background-color: #fff;
+    background-image: url("img/header-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages .advantages__item{
+    padding-top: 92px;
+}
+
+.advantages .advantage__slogan {
+    margin-left: 673px;
+
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #3D4F9F;
+}
+
+.advantages .advantage__name {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 420px;
+    width: 600px;
+
+    text-align: center;
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.advantages .advantage__description {
+    width: 502px;
+    margin-left: 469px;
+    margin-top: 22px;
+
+    line-height: 191%;
+    text-align: center;
+}
+
+.advantages .advantage__button {
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin-left: 694px;
+    position: relative;
+
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.advantages .advantage__button::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    top: 20px;
+    left: 20px;
+    
+    background-image: url("img/play.svg");
+}
+
+.advantages .advantage__button:hover,
+.advantages .advantage__button:active {
+    background-color: #5E81FE;
+}
+
+
+.advantages .advantage__button:hover::before,
+.advantages .advantage__button:active::before {
+    background-image: url("img/play-active.svg");
+}
+
+.advantages__slider__buttons-list {
+    display: flex;
+    margin-left: 696px;
+    margin-top: 180px;
 }
