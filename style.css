@@ -234,7 +234,7 @@ ul {
 .customers .customers__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 58px;
+    padding-top: 58px;
     margin-left: 276px;
 }
 
@@ -244,4 +244,101 @@ ul {
 
 .customers__list .customers__item:hover path {
     fill: #5E81FE;
+}
+
+/* plan */
+
+.plan__wrap {
+    background-color: #F5F8FF;
+}
+
+.plan {
+    width: 1440px;
+    height: 590px;
+    margin: auto;
+    padding-top: 208px;
+    padding-left: 332px;
+
+    background-image: url("img/plan-illustration.png");
+    background-repeat: no-repeat;
+    background-position: 650px;
+    background-position-y: 132px;
+}
+
+.plan .plan__devices {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #3D4F9F;
+}
+
+.plan .plan__slogan {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+
+    font-size: 36px;
+    color: #3D4F9F;
+    font-weight: lighter;
+}
+
+.plan .plan__description {
+    width: 413px;
+    margin-top: 28px;
+
+    line-height: 191%;
+    color: #8D96BD;
+}
+
+.plan .plan__buttons {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 53px;
+}
+
+.plan__buttons .plan__video {
+    padding-left: 23px;
+    padding-right: 35px;
+    position: relative;
+
+    color: #fff;
+    background-color: #4C85FF;
+    border: none;
+}
+
+.plan__buttons .plan__video::before {
+    content: "";
+    position: absolute;
+    width: 6.2px;
+    height: 7.5px;
+    top: 19px;
+    left: 100px;
+
+    background-image: url("img/play-active.svg");
+    background-size: contain;
+}
+
+.plan__buttons .plan__video:hover,
+.plan__buttons .plan__video:active {
+    background-color: #fff;
+    color: #4C85FF;
+}
+
+.plan__buttons .plan__video:hover::before {
+    background-image: url("img/play.svg");
+}
+
+.plan__buttons .plan__features {
+    color: #ADB4D2;
+
+    margin-left: -1px;
+    padding: 12px 24px;
+    border-color: #D1D1E4;
+}
+
+.plan__buttons .plan__features:hover,
+.plan__buttons .plan__features:active {
+    color: #000;
+
+    border-color: #000;
 }
