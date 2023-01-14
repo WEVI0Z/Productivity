@@ -141,7 +141,7 @@ ul {
 .advantages {
     margin: auto;
     width: 1440px;
-    min-height: 570px;
+    min-height: 582px;
 }
 
 .advantages__wrap{
@@ -221,4 +221,27 @@ ul {
     display: flex;
     margin-left: 696px;
     margin-top: 180px;
+}
+
+/* customers */
+
+.customers {
+    margin: auto;
+    width: 1440px;
+    min-height: 146px;
+}
+
+.customers .customers__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 58px;
+    margin-left: 276px;
+}
+
+.customers__list .customers__item {
+    margin-right: 76.5px;
+}
+
+.customers__list .customers__item:hover path {
+    fill: #5E81FE;
 }
