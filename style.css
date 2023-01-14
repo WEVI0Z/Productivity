@@ -494,3 +494,90 @@ ul {
     background-color: #3A79FF;
     color: #D2E1FF;
 }
+
+/* stats */
+
+.stats {
+    width: 100%;
+}
+
+.stats__list {
+    display: flex;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.stats .stats__productivity-stat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: #5E80FF;
+    color: #fff;
+}
+
+.stats .stats__users-stat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #D8E3FE;
+    color: #5E80FF;
+}
+
+.stats__list .stats__index {
+    font-size: 48px;
+    margin-top: 158px;
+    width: 260px;
+}
+
+.stats__productivity-stat .stats__index {
+    margin-right: 96px;
+    text-align: right;
+}
+
+.stats__users-stat .stats__index {
+    margin-left: 96px;
+}
+
+.stats__list .stats__description {
+    font-size: 18px;
+    width: 250px;
+}
+
+.stats__productivity-stat .stats__description {
+    margin-right: 96px;
+    text-align: right;
+}
+
+.stats__users-stat .stats__description {
+    margin-left: 96px;
+}
+
+.stats__list li {
+    position: relative;
+}
+
+.stats__productivity-stat::before {
+    content: "";
+    width: 67px;
+    height: 66px;
+    top: 66px;
+    right: 90px;
+    position: absolute;
+
+    background-image: url("img/productivity-stat.svg");
+}
+
+.stats__users-stat::before {
+    content: "";
+    width: 74px;
+    height: 62px;
+    top: 66px;
+    left: 90px;
+    position: absolute;
+
+    background-image: url("img/people-stat.svg");
+}
