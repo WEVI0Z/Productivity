@@ -884,7 +884,7 @@ path {
 
 .faq {
     width: 1440px;
-    min-height: 984px;
+    min-height: 797px;
     margin: auto;
 }
 
@@ -1003,4 +1003,87 @@ path {
     color: #E8ECF4;
 
     background-color: #7382A3;
+}
+
+/* ad */
+
+.ad__wrap {
+    background-image: url("img/welcome-background.jpg");
+    background-size: cover;
+}
+
+.ad {
+    width: 1440px;
+    min-height: 458px;
+    margin: auto;
+}
+
+.ad .ad__name {
+    padding: 0;
+    padding-top: 93px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.ad .ad__slogan {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    display: block;
+
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.ad .ad__description {
+    width: 712px;
+    margin: auto;
+    margin-top: 20px;
+
+    line-height: 191%;
+    color: #fff;
+    text-align: center;
+}
+
+.ad .ad__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.ad__buttons .ad__pricing-button {
+    padding: 13px 28px;
+
+    color: #565F82;
+
+    background-color: #fff;
+    border: none;
+}
+
+.ad__buttons .ad__pricing-button:hover,
+.ad__buttons .ad__pricing-button:active {
+    color: #fff;
+
+    background-color: #565F82;
+}
+
+.ad__buttons .ad__documentation-button {
+    margin-left: -2px;
+
+    color: #fff;
+
+    border-color: #fff;
+}
+
+.ad__buttons .ad__documentation-button:hover,
+.ad__buttons .ad__documentation-button:active {
+    color: #565F82;
+
+    border-color: #565F82;
 }
