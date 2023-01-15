@@ -93,8 +93,6 @@ path {
     min-height: 80px;
     margin: auto;
     align-items: flex-start;
-
-    /* border: 1px dashed; */
 }
 
 .header__nav .nav__list {
@@ -121,13 +119,13 @@ path {
     margin-left: 46px;
 }
 
-.nav__list a{
+.header__nav .nav__list a{
     font-size: 12px;
     font-weight: bold;
 }
 
-.nav__list a:hover,
-.nav__list a:active{
+.header__nav .nav__list a:hover,
+.header__nav .nav__list a:active{
     color: #5E81FE;
 }
 
@@ -141,8 +139,8 @@ path {
     margin-left: 35px;
 }
 
-.services-item:hover path,
-.services-item:active path {
+.main-header .services-item:hover path,
+.main-header .services-item:active path {
     fill: #5E81FE;
 }
 
@@ -1159,4 +1157,89 @@ path {
 
     cursor: pointer;
     background-color: #fff;    
+}
+
+/* footer */
+
+.main-footer {
+    width: 1440px;
+    margin: auto;
+    padding-top: 80px;
+    min-height: 200px;
+}
+
+.footer__upper-part {
+    display: flex;
+    min-height: 80px;
+    align-items: flex-start;
+}
+
+.footer__nav .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 160px;
+    position: relative;
+}
+
+.footer__nav .nav__list::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    left: -55px;
+    top: -2px;
+    position: absolute;
+
+    background-color: #5E81FE;
+    border-radius: 50%;
+}
+
+.footer__nav .nav__item {
+    margin-left: 46px;
+}
+
+.footer__nav .nav__list a{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer__nav .nav__list a:hover,
+.footer__nav .nav__list a:active{
+    color: #5E81FE;
+}
+
+.main-footer .footer__services-list{
+    display: flex;
+    margin-left: 346px;
+    margin-top: 30px;
+}
+
+.footer__services-list .services-item {
+    margin-left: 35px;
+}
+
+.main-footer .services-item:hover path,
+.main-footer .services-item:active path {
+    fill: #5E81FE;
+}
+
+.main-footer .footer__start-button {
+    margin-left: 44px;
+    margin-top: 19px;
+
+    color: #5E81FE;
+    background-color: #D2E1FF;
+    border: none;
+}
+
+.main-footer .footer__start-button:hover {
+    color: #D2E1FF;
+    background-color: #5E81FE;
+}
+
+.main-footer .footer__copyright {
+    margin-left: 205px;
+
+    color: #AEB8D0;
+    font-size: 12px;
 }
