@@ -879,3 +879,128 @@ path {
     margin-top: 80px;
     margin-left: 234px;
 }
+
+/* faq */
+
+.faq {
+    width: 1440px;
+    min-height: 984px;
+    margin: auto;
+}
+
+.faq .faq__name {
+    padding: 0;
+    margin-top: 180px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #3D4F9F;
+}
+
+.faq .faq__slogan {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    display: block;
+
+    color: #3D4F9F;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.faq__list {
+    width: 743px;
+    margin: auto;
+    margin-top: 83px;
+}
+
+.faq__item {
+    margin-left: 48px;
+    margin-top: 58px;
+    position: relative;
+}
+
+.faq__item::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -55px;
+    width: 741px;
+    height: 0px;
+
+    border: 0.5px solid #D8E3FE;
+}
+
+.faq__item .item__name{
+    position: relative;
+    
+    color: #8E96B7;
+    font-size: 15px;
+    font-weight: bolder;
+
+    border: none;
+    background-color: #fff;
+}
+
+.faq__item .item__name:hover,
+.faq__item .item__name:active {
+    cursor: pointer;
+}
+
+.faq__item .item__name::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    left: -35px;
+    top: 3px;
+
+    background-image: url("img/faq-button.svg");
+}
+
+.faq__item.active .item__name::before {
+    background-image: url("img/faq-button-active.svg");
+}
+
+.faq__item.active .item__name {
+    color: #495274;
+}
+
+.faq__item .item__content {
+    display: none;
+}
+
+.faq__item.active .item__content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq__item .item__description {
+    width: 420px;
+
+    color: #8D96BD;
+    line-height: 191%;
+    margin-top: 21px;
+    margin-left: 24px;
+}
+
+.faq__item .item__documentation-button {
+    margin-left: 44px;
+    margin-top: 32px;
+    padding: 13px 32px;
+
+    color: #7382A3;
+
+    background-color: #E8ECF4;
+    border: none;
+}
+
+.faq__item .item__documentation-button:hover,
+.faq__item .item__documentation-button:active {
+    color: #E8ECF4;
+
+    background-color: #7382A3;
+}
